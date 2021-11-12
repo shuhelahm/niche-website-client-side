@@ -7,6 +7,19 @@
     height: 150px;
 }
 .single-product p{
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
+    line-height: normal;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .single-product{
+        box-shadow: 2px 2px 2px 4px rgba(102, 51, 153, 0.171);
+        padding: 5px;
+        height: 500px;
+    }
+    
 }

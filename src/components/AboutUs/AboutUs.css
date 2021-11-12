@@ -6,7 +6,7 @@
 }
 
 .about-us-left p{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .about-us-right{
@@ -17,4 +17,15 @@
 .about-us-right img{
     height: 140px;
     border-radius: 10px;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .about-us-section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    
 }
