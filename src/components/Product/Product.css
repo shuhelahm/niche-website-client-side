@@ -1,0 +1,12 @@
+.single-product{
+    box-shadow: 2px 2px 2px 4px rgba(102, 51, 153, 0.171);
+    padding: 5px;
+    height: 430px;
+}
+.single-product img{
+    height: 150px;
+}
+.single-product p{
+    font-size: 12px;
+    text-align: justify;
+}

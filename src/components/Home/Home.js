@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
 import AboutUs from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';
 import Products from '../Products/Products';
@@ -9,19 +8,6 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
-            <div>
-  <Navbar bg="primary" variant="dark" className='nav-bar mx-auto' sticky="top" collapseOnSelect expand="md">
-    <Container>
-    <Navbar.Brand href="#home">Car Bd</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Products</Nav.Link>
-      <Nav.Link href="#pricing">Reviews</Nav.Link>
-      <Nav.Link href="#pricing">Review</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-            </div>
             {/* banner section */}
             <div>
                 <div className='banner-section'>

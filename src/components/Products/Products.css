@@ -1,0 +1,4 @@
+.products-section{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

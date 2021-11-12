@@ -2,14 +2,20 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Header from './components/Header/Header';
+import Products from './components/Products/Products';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <Header></Header>
         <Switch>
-          <Route path='home'>
+          <Route path='/home'>
             <Home></Home>
+          </Route>
+          <Route path='/home/#products'>
+            <Products></Products>
           </Route>
           <Route exact path="/">
             <Home></Home>

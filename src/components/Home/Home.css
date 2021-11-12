@@ -1,6 +1,11 @@
 .banner-section{
     position: relative;
 }
+
+.banner-img{
+    height: 450px;
+}
+
 .explore-btn{
     position: absolute;
     bottom: 80px;
