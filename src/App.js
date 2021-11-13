@@ -13,6 +13,8 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Pay from './components/Pay/Pay';
 import MyOrders from './components/MyOrders/MyOrders';
 import AddReviews from './components/AddReviews/AddReviews';
+import { Placeholder } from 'react-bootstrap';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -49,6 +51,9 @@ function App() {
           </Route>
           <Route path='/addreviews'>
             <AddReviews></AddReviews>
+          </Route>
+          <Route path='product/placeorder/:id'>
+            <PlaceOrder></PlaceOrder>
           </Route>
           <Route path='/myorders'>
             <MyOrders></MyOrders>

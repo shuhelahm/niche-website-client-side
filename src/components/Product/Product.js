@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Product.css';
 
 const Product = ({product}) => {
@@ -8,7 +9,7 @@ const Product = ({product}) => {
             <h3>{product.name}</h3>
             <h4>Price: ${product.price}</h4>
             <p>{product.description}</p>
-            <button className='btn btn-primary'>Buy Now</button>
+            <Link className='btn btn-primary' to={`/products/placeorder/${product._id}`}>Buy Now</Link>
         </div>
 
     );

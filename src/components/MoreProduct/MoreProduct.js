@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Product/Product.css';
 
 const MoreProduct = ({moreProduct}) => {
@@ -8,7 +9,7 @@ const MoreProduct = ({moreProduct}) => {
             <h3>{moreProduct.name}</h3>
             <h4>Price: ${moreProduct.price}</h4>
             <p>{moreProduct.description}</p>
-            <button className='btn btn-primary'>Buy Now</button>
+            <Link className='btn btn-primary' to={`/products/placeorder/${moreProduct._id}`}>Buy Now</Link>
         </div>
     );
 };
