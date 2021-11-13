@@ -21,12 +21,6 @@ const Header = () => {
       <Nav.Link className='text-white' as={Link} to="/reviews">Reviews</Nav.Link>
       <Nav.Link className='text-white' as={Link} to="/aboutus">About Us</Nav.Link>
       <Nav.Link className='text-white' as={Link} to="/register">Register</Nav.Link>
-      {/* { user.email ?? <Nav.Link as={Link} to="/orders">My Orders</Nav.Link>
-      }
-      { user.email ?? <Nav.Link as={Link} to="/manageallorders">Manage All Orders</Nav.Link>
-      }
-      { user.email ?? <Nav.Link as={Link} to="/addanewservice">Add a New Service</Nav.Link>
-      }*/}
       { user.email ? <button onClick={logOut}>Log out</button> : <Nav.Link className='text-white' as={Link} to="/login">Login</Nav.Link> 
       } 
       { user.email ?? <Nav.Link className='text-white' as={Link} to="/dashboard">Dashboard</Nav.Link>
