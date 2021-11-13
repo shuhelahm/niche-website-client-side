@@ -6,6 +6,7 @@ initializeAuthentication();
 
 const useFirebase = () =>{
     const [user, setUser] = useState({});
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -21,12 +22,16 @@ const useFirebase = () =>{
     }
 
     const logOut = () =>{
-        signOut(auth)
-        .then(() => {
+        signOut(auth).then(() => {
+            console.log('log out clicked')
             setUser({})
+            console.log(user)
         });
     }
 
+    const handleNameChange = e =>{
+        setName(e.target.value)
+    }
     const handleEmailChange = e =>{
         setEmail(e.target.value)
     }
@@ -40,6 +45,7 @@ const useFirebase = () =>{
         createUserWithEmailAndPassword(auth,email,password)
         .then(result => {
             const user = result.user;
+            console.log(user)
             setError('');
         })
         .catch(error=>{
@@ -64,11 +70,14 @@ const useFirebase = () =>{
         logOut,
         signInUsingGoogle,
         handleRegistrantion,
+        handleNameChange,
         handleEmailChange,
         handlePasswordChange,
         handleLogin,
-        error
+        error,
+        name
     }
 }
 
 export default useFirebase;
+// 

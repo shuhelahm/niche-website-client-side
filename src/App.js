@@ -7,6 +7,12 @@ import Products from './components/Products/Products';
 import Explore from './components/Explore/Explore';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Dashboard from './components/Dashboard/Dashboard';
+import Reviews from './components/Reviews/Reviews';
+import AboutUs from './components/AboutUs/AboutUs';
+import Pay from './components/Pay/Pay';
+import MyOrders from './components/MyOrders/MyOrders';
+import AddReviews from './components/AddReviews/AddReviews';
 
 function App() {
   return (
@@ -26,8 +32,26 @@ function App() {
           <Route path='/register'>
             <Register></Register>
           </Route>
-          <Route path='/home/#products'>
+          <Route path='/dashboard'>
+            <Dashboard></Dashboard>
+          </Route>
+          <Route path='/products'>
             <Products></Products>
+          </Route>
+          <Route path='/reviews'>
+            <Reviews></Reviews>
+          </Route>
+          <Route path='/aboutus'>
+            <AboutUs></AboutUs>
+          </Route>
+          <Route path='/pay'>
+            <Pay></Pay>
+          </Route>
+          <Route path='/addreviews'>
+            <AddReviews></AddReviews>
+          </Route>
+          <Route path='/myorders'>
+            <MyOrders></MyOrders>
           </Route>
           <Route exact path="/">
             <Home></Home>

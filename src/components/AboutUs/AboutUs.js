@@ -3,7 +3,7 @@ import './AboutUs.css';
 
 const AboutUs = () => {
     return (
-            <div className='mx-auto about-us-section'>
+            <div className='mx-auto my-5 about-us-section'>
                 <div className='about-us-left'>
                     <h2>About Us</h2>
                     <p>Four wheel vehicle industry is not much reach here in Bangladesh points of view. But the local industry is progressing. Already some of the local brand started vehicle localization. But this local industry depends on Japanese used vehicle. Almost 80% four wheeler here in Bangladesh is pre-owned vehicles, and near about 30% vehicles are brand new.But general peoples of Bangladesh are not aware about private and public vehicles price, availability as well as safety aspects. Car Bd started work to aware all about public and private vehicle including safety awareness and vehicle overview.</p>
