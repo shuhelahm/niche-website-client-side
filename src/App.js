@@ -5,6 +5,8 @@ import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
 import Explore from './components/Explore/Explore';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
           </Route>
           <Route path='/explore'>
             <Explore></Explore>
+          </Route>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
+          <Route path='/register'>
+            <Register></Register>
           </Route>
           <Route path='/home/#products'>
             <Products></Products>
